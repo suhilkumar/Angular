@@ -1,0 +1,26 @@
+<div class="card-container">
+<h2>Welcome to Angular 19 Application</h2>
+<mat-card >
+<form #userDetails="ngForm" (ngSubmit)="login(userDetails.value)">
+    <mat-card-header>
+      <mat-card-title>Login</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="form"> 
+        <mat-form-field>
+            <mat-label for="userName">Name</mat-label>
+            <input type="text" name="userName" ngModel matInput/>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label for="password">password</mat-label>
+            <input type="password" name="password" ngModel matInput />
+        </mat-form-field>
+    </mat-card-content>
+    @if(error){
+        <h4 style="text-align: center; color: red;"> {{error}}</h4>
+    }
+    <mat-card-actions>
+        <button mat-raised-button type="submit">submit</button>
+    </mat-card-actions>
+</form>
+</mat-card>
+</div>
