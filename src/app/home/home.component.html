@@ -1,0 +1,21 @@
+<mat-sidenav-container fullscreen>
+  <mat-sidenav #sideNav mode="push">
+    <mat-nav-list>
+      <a mat-list-item (click)="sideNav.close()" routerLink="controlvalueaccessor">Reusable forms</a>
+      <a mat-list-item (click)="sideNav.close()" routerLink="service">Services</a>
+      <a mat-list-item (click)="sideNav.close()" routerLink="di">Dependency Injection</a>
+      <a mat-list-item (click)="sideNav.close()" routerLink="custom-directives">Custom Directives </a>
+      <a mat-list-item (click)="sideNav.close()" routerLink="ng-template-guard">Learn NgTemplate Guard</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <button (click)="sideNav.open()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <a (click)="sideNav.close()" routerLink="/login">login</a>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,52 @@
+<section class="primary-banner">
+  <h2>What is Attribute Directive</h2>
+
+  <p>
+    It will change the appearance or behavior of Dom Elements and Angular
+    components
+  </p>
+
+  <h4>How to create Custom Attribute Directive</h4>
+  <p>
+    create a custom Directive
+    <span> ng generate directive "directiveName" </span>
+  </p>
+
+  <ol>
+    <li>we need to import the element ref from angular core</li>
+    <h4>What is elementRef</h4>
+    <p>
+      It grants direct access to the host dom elements through nativeElement
+      Property
+    </p>
+    <p>we do it with di you inject in constructor of your directives</p>
+
+    <li>Set the color to yellow with elementRef</li>
+    <span [myHighlight]="'yellow'"
+      >this.elementRef.nativeElement.style.backgroundColor = "yellow"</span
+    >
+
+    <li>
+      now set the directive in the element and import it in its component.ts
+      file
+    </li>
+
+    <li>
+      You can also apply the event in the directives as well with the help of
+      HostListener("event")
+    </li>
+
+    <li>
+      You can also bind send data with the help of input binding but make sure
+      to name it as directive name and use property binding syntax
+    </li>
+    <p>[directiveName]="variable"</p>
+
+    <li>whenever you want expression in html you use NgNonBindable</li>
+
+    <p>with ngNonBindable</p>
+    <span ngNonBindable>{{ 1 + 1 }}</span>
+    <p>without ngNonBindable</p>
+    <span> {{ 1 + 1 }}</span>
+  </ol>
+</section>

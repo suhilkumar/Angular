@@ -1,0 +1,26 @@
+<h2> show and hide component based on buttonClick</h2>
+
+<div *appMyNgIf="isVisible">
+    <ul>
+        <li>
+            diff. scenarios for structural directives.
+        </li>
+
+    </ul>
+</div>
+
+<button mat-stroked-button (click)="isVisible = !isVisible">Show/Hide</button>
+
+<!-- repeat Times Directives -->
+ 
+<div *appRepeatTimes="count; let i=index">
+
+  <p>
+      this is repeat count: {{i}} 
+  </p>
+</div>
+
+<div style="margin-top: 10px;">
+
+    <input type="number" [(ngModel)]="count" />
+</div>
