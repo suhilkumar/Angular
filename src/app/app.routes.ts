@@ -11,6 +11,7 @@ import { CustomStructualDirectivesComponent } from './CustomsDirectives/custom-s
 import { AttributesComponent } from './CustomsDirectives/attributes/attributes.component';
 import { CustomNgIfComponent } from './CustomsDirectives/custom-ng-if/custom-ng-if.component';
 import { LearnNgTemplateGuardComponent } from './learn-ng-template-guard/learn-ng-template-guard.component';
+import { CreateDynamicComponent } from './create-dynamic/create-dynamic.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -44,6 +45,10 @@ export const routes: Routes = [
       {
         path: "ng-template-guard",
         component: LearnNgTemplateGuardComponent
+      },
+      {
+        path: "dynamic-component",
+        component: CreateDynamicComponent
       }
     ],
   },

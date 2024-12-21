@@ -1,0 +1,23 @@
+.component{
+background-color: rgb(170, 72, 72);
+padding: 20px;
+margin: 40px
+}
+
+.component-create {
+    background-color: rgb(48, 197, 128);
+    padding: 20px;
+    margin: 40px
+
+}
+.card {
+    width: 400px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin: 0 auto
+
+}
